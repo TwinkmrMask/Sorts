@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace sorts
 {
-    class list
+    public class defaultList
     {
+        private static Random rand = new Random();
+        protected static readonly IList<int> List =  Enumerable.Range(0, 20 + 1).Select(i => rand.Next(50)).ToList();
     }
 }

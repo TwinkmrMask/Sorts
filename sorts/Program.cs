@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace sorts
 {
-	class Program
+	class Program : defaultList
 	{
-		static readonly List<int> list = new List<int>() { 5, 9, 11, 3, 7, 8 };
+		
 		static void print(List<int> list)
 		{
 			foreach (int i in list)
@@ -18,19 +18,19 @@ namespace sorts
 		{
 			using (PanecakeSort sort = new PanecakeSort())
 			{
-				var listBySort = list.ToList();
+				var listBySort = List.ToList();
 				print(listBySort);
 				print(sort.Sort(listBySort).ToList());
 			}
 			using (BubbleSort sort = new BubbleSort())
 			{
-				var listBySort = list.ToList();
+				var listBySort = List.ToList();
 				print(listBySort);
 				print(sort.Sort(listBySort).ToList());
 			}
 			using (InsertionSort sort = new InsertionSort())
 			{
-				var listBySort = list.ToList();
+				var listBySort = List.ToList();
 				print(listBySort);
 				print(sort.Sort(listBySort).ToList());
 			}

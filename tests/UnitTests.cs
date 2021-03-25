@@ -5,7 +5,7 @@ using Xunit;
 
 namespace UnitTest
 {
-    public class UnitTests : list
+    public class UnitTests : defaultList
     {
         [Fact]
         public void PanecakeSortTest()
